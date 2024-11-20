@@ -11,4 +11,8 @@ const config = {
   }
 };
 
+// Debug log to see which environment and URL is being used
+console.log('Current environment:', env);
+console.log('Using API URL:', config[env].API_URL);
+
 export default config[env];
