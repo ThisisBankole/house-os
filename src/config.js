@@ -6,7 +6,7 @@ const config = {
     // other development-specific configurations
   },
   production: {
-    API_URL: 'https://owapp-f3aua3bzcea2hudc.ukwest-01.azurewebsites.net/api',
+    API_URL: 'https://owabackend-amcsfyfmaqb2edhn.ukwest-01.azurewebsites.net/api', 
     // other production-specific configurations
   }
 };
