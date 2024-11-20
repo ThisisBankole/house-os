@@ -47,7 +47,12 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
         builder => builder
-            .WithOrigins("http://localhost:3000", "https://brave-beach-08974a20f.5.azurestaticapps.net", "https://green-plant-0b4dd561e.5.azurestaticapps.net") // Adjust if your React app runs on a different port
+            .WithOrigins(
+            "http://localhost:3000", 
+            "https://brave-beach-08974a20f.5.azurestaticapps.net", 
+            "https://green-plant-0b4dd561e.5.azurestaticapps.net"
+            "https://*.azurestaticapps.net"  
+            ) // Adjust if your React app runs on a different port
             .AllowAnyMethod()
             .AllowAnyHeader()
             .AllowCredentials());
